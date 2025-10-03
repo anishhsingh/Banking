@@ -1,0 +1,84 @@
+{
+  "info": {
+    "_postman_id": "9b6b1c01-6f23-4a2b-9b60-2b6d9bdb3e5e",
+    "name": "My Bank API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "Collection for My Bank endpoints"
+  },
+  "item": [
+    {
+      "name": "Create Customer",
+      "request": {
+        "method": "POST",
+        "header": [
+          {"key": "Content-Type", "value": "application/json"}
+        ],
+        "url": {"raw": "{{baseUrl}}/api/customers", "host": ["{{baseUrl}}"], "path": ["api","customers"]},
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"firstName\": \"Alice\",\n  \"lastName\": \"Doe\",\n  \"email\": \"alice@example.com\",\n  \"phone\": \"1234567890\",\n  \"dob\": \"1990-01-01\"\n}"
+        }
+      }
+    },
+    {
+      "name": "Get Customer by ID",
+      "request": {"method": "GET", "url": {"raw": "{{baseUrl}}/api/customers/1", "host": ["{{baseUrl}}"], "path": ["api","customers","1"]}}
+    },
+    {
+      "name": "Create Savings Account",
+      "request": {
+        "method": "POST",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "url": {"raw": "{{baseUrl}}/api/accounts", "host": ["{{baseUrl}}"], "path": ["api","accounts"]},
+        "body": {"mode": "raw", "raw": "{\n  \"customerId\": 1,\n  \"accountType\": \"SAVINGS\",\n  \"openingBalance\": 100.00,\n  \"interestRate\": 0.025\n}"}
+      }
+    },
+    {
+      "name": "Create Current Account",
+      "request": {
+        "method": "POST",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "url": {"raw": "{{baseUrl}}/api/accounts", "host": ["{{baseUrl}}"], "path": ["api","accounts"]},
+        "body": {"mode": "raw", "raw": "{\n  \"customerId\": 1,\n  \"accountType\": \"CURRENT\",\n  \"openingBalance\": 0,\n  \"overdraftLimit\": 200.00\n}"}
+      }
+    },
+    {
+      "name": "Get Account by ID",
+      "request": {"method": "GET", "url": {"raw": "{{baseUrl}}/api/accounts/1", "host": ["{{baseUrl}}"], "path": ["api","accounts","1"]}}
+    },
+    {
+      "name": "Deposit to Account",
+      "request": {
+        "method": "POST",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "url": {"raw": "{{baseUrl}}/api/accounts/1/deposit", "host": ["{{baseUrl}}"], "path": ["api","accounts","1","deposit"]},
+        "body": {"mode": "raw", "raw": "{\n  \"amount\": 50.00,\n  \"note\": \"cash\"\n}"}
+      }
+    },
+    {
+      "name": "Withdraw from Account",
+      "request": {
+        "method": "POST",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "url": {"raw": "{{baseUrl}}/api/accounts/1/withdraw", "host": ["{{baseUrl}}"], "path": ["api","accounts","1","withdraw"]},
+        "body": {"mode": "raw", "raw": "{\n  \"amount\": 20.00,\n  \"note\": \"atm\"\n}"}
+      }
+    },
+    {
+      "name": "Transfer between Accounts",
+      "request": {
+        "method": "POST",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "url": {"raw": "{{baseUrl}}/api/accounts/transfer", "host": ["{{baseUrl}}"], "path": ["api","accounts","transfer"]},
+        "body": {"mode": "raw", "raw": "{\n  \"fromAccountId\": 1,\n  \"toAccountId\": 2,\n  \"amount\": 10.00,\n  \"note\": \"move\"\n}"}
+      }
+    },
+    {
+      "name": "List Transactions",
+      "request": {"method": "GET", "url": {"raw": "{{baseUrl}}/api/accounts/1/transactions", "host": ["{{baseUrl}}"], "path": ["api","accounts","1","transactions"]}}
+    }
+  ],
+  "variable": [
+    {"key": "baseUrl", "value": "http://localhost:8080"}
+  ]
+}

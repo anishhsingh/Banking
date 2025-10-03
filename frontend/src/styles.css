@@ -1,0 +1,421 @@
+/* Modern Banking UI Styles - Exact Kantar Text2Topics Color Match with Company CSS */
+
+/* Tailwind CSS Base Styles */
+*, :before, :after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position: ;
+  --tw-gradient-via-position: ;
+  --tw-gradient-to-position: ;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / .5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
+  --tw-contain-size: ;
+  --tw-contain-layout: ;
+  --tw-contain-paint: ;
+}
+
+:before, :after {
+  --tw-content: "";
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position: ;
+  --tw-gradient-via-position: ;
+  --tw-gradient-to-position: ;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / .5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
+  --tw-contain-size: ;
+  --tw-contain-layout: ;
+  --tw-contain-paint: ;
+}
+
+/* Font Awesome Styles */
+:root, :host {
+  --fa-style-family-classic: "Font Awesome 6 Free";
+  --fa-font-solid: normal 900 1em / 1 "Font Awesome 6 Free";
+  --fa-font-regular: normal 400 1em / 1 "Font Awesome 6 Free";
+  --fa-style-family-brands: "Font Awesome 6 Brands";
+  --fa-font-brands: normal 400 1em / 1 "Font Awesome 6 Brands";
+}
+
+/* HTML and Root Styles */
+html, :host {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  tab-size: 4;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Company Body Background Color */
+.bg-body-color {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 242 239 / var(--tw-bg-opacity, 1));
+}
+
+/* Custom Color Variables - Banking App + Company Theme */
+:root {
+  --primary-color: #000000;
+  --primary-dark: #1a1a1a;
+  --secondary-color: #f5f5f5;
+  --accent-color: #000000;
+  --danger-color: #dc2626;
+  --warning-color: #d97706;
+  --success-color: #059669;
+  --text-primary: #000000;
+  --text-secondary: #666666;
+  --text-muted: #999999;
+  --border-color: #e0e0e0;
+  --bg-light: #f3f2ef; /* Company bg-body-color */
+  --bg-white: #ffffff;
+  --header-bg: #000000;
+  --header-text: #ffffff;
+  --table-header-bg: #f5f5f5;
+  --table-border: #e0e0e0;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+}
+
+/* Body Styles - Company Font */
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: KantarBrownTT-Regular, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  background: var(--bg-light);
+  min-height: 100vh;
+  margin: 0;
+  color: var(--text-primary);
+  line-height: inherit;
+}
+
+/* Company Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4D4C9;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* Custom Bootstrap overrides */
+.btn-primary {
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-weight: 500;
+  transition: all 0.15s ease;
+  color: var(--header-text);
+  font-size: 14px;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+  color: var(--header-text);
+}
+
+.btn-success {
+  background: var(--success-color);
+  border: 1px solid var(--success-color);
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-weight: 500;
+}
+
+.btn-success:hover {
+  background: #047857;
+  border-color: #047857;
+}
+
+.card {
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  box-shadow: none;
+  transition: none;
+  overflow: hidden;
+  background: var(--bg-white);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-sm);
+}
+
+.form-control {
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  padding: 8px 12px;
+  font-size: 14px;
+  transition: all 0.15s ease;
+  background: var(--bg-white);
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: none;
+  outline: none;
+}
+
+.navbar {
+  background: var(--header-bg) !important;
+  box-shadow: none;
+  border-bottom: 1px solid var(--border-color);
+  height: 60px;
+  padding: 0;
+}
+
+.navbar-brand {
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--header-text) !important;
+  letter-spacing: 0.5px;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--header-text) !important;
+}
+
+/* Professional table styling - exact Kantar match */
+.table {
+  background: var(--bg-white);
+  border: 1px solid var(--table-border);
+  border-collapse: collapse;
+}
+
+.table th {
+  background: var(--table-header-bg);
+  border-bottom: 1px solid var(--table-border);
+  border-right: 1px solid var(--table-border);
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 13px;
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.table td {
+  border-bottom: 1px solid var(--table-border);
+  border-right: 1px solid var(--table-border);
+  padding: 12px 16px;
+  color: var(--text-primary);
+  font-size: 14px;
+}
+
+.table tbody tr:hover {
+  background-color: #fafafa;
+}
+
+/* Modern glass effect - updated for professional look */
+.glass-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: var(--shadow-md);
+}
+
+/* Account balance cards - updated */
+.balance-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  border-radius: 4px;
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.balance-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--primary-color);
+}
+
+/* Transaction cards */
+.transaction-item {
+  background: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 8px;
+  transition: all 0.15s ease;
+}
+
+.transaction-item:hover {
+  background-color: #fafafa;
+  border-color: var(--primary-color);
+}
+
+.transaction-amount.positive {
+  color: var(--success-color);
+  font-weight: 600;
+}
+
+.transaction-amount.negative {
+  color: var(--danger-color);
+  font-weight: 600;
+}
+
+/* Loading animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.4s ease-out;
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+}
+
+/* Alert components */
+.alert {
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 12px 16px;
+  margin-bottom: 1rem;
+}
+
+.alert-success {
+  background: #f0fdf4;
+  color: #166534;
+  border-color: #bbf7d0;
+}
+
+.alert-danger {
+  background: #fef2f2;
+  color: #991b1b;
+  border-color: #fecaca;
+}
+
+.alert-info {
+  background: #eff6ff;
+  color: #1e40af;
+  border-color: #bfdbfe;
+}

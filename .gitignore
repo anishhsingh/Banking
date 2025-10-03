@@ -1,0 +1,30 @@
+# Maven build output
+/target/
+
+# Node / Angular dependencies (do not commit)
+node_modules/
+frontend/node_modules/
+
+# Angular build + cache (avoid huge files)
+frontend/.angular/
+frontend/dist/
+
+# IDE metadata
+/.idea/
+*.iml
+
+# OS files
+.DS_Store
+
+# Cleanup artifacts
+..bfg-report/
+my-bank-repo-mirror.git/
+"eval \"$(ssh-agent -s)\""
+"eval \"$(ssh-agent -s)\".pub"
+
+# Logs
+*.log
+
+# Temporary files
+*.swp
+~*
